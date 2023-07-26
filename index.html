@@ -19,16 +19,75 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
-
+    <!-- font awesome icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- css -->
     <style>
       .font {
         font-family: "Lato", sans-serif;
       }
+      #check:checked ~ ul {
+        margin-left: 0;
+      }
     </style>
   </head>
   <body class="font">
-    <header class="mx-auto max-w-screen-lg"></header>
+    <header class="py-8 mx-auto max-w-screen-lg">
+      <nav
+        class="bg-[#F85559] lg:bg-red-500 lg:flex md:bg-yellow-300 sm:bg-green-500 lg:justify-between gap-5 text-white rounded-full flex justify-between py-2 px-6 content-center items-center"
+      >
+        <div>
+          <ul class="gap-3 text-[12px] flex">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">All Fruits</a></li>
+          </ul>
+        </div>
+        <div>
+          <img class="w-[100px]" src="images/Group 2.png" alt="" />
+        </div>
+        <div>
+          <div class="">
+            <form action="" class="relative">
+              <input
+                type="text"
+                placeholder="Search"
+                class="w-24 rounded-full input input-bordered md:w-auto"
+              />
+              <button class="absolute text-[#121212] mt-[12px] -ml-[35px]">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <section class="h-15 px-4 hidden">
+        <input type="checkbox" id="check" class="hidden" />
+        <label for="check" class="float-right mr-10 mt-3"
+          ><i class="fa-solid fa-bars"></i
+        ></label>
+        <label class="flex p-2">
+          <img class="w-6" src="images/logo.png" alt="" />
+          <h1 class="">Fruit Burst</h1>
+        </label>
+        <ul
+          class="mr-10 leading-[50px] top-20 text-center ml-[-100%] w-[100%] transition-all duration-500"
+        >
+          <li><a class="hidden" href="#">Home</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">All Fruits</a></li>
+        </ul>
+      </section>
+    </header>
     <main class="mx-auto max-w-screen-lg"></main>
     <footer></footer>
   </body>
