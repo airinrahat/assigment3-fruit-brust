@@ -1,0 +1,10 @@
+.font {
+    font-family: "Lato", sans-serif;
+  }
+  #check:checked ~ ul {
+    margin-left: 0;
+  }
+  #btnimg{
+    background-image: url('./images/team.png');
+   
+  }
